@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "saeh98110352468",
+    "database": "productsAPIdb",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

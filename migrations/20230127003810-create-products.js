@@ -9,38 +9,23 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      productImage: {
-        type: Sequelize.STRING
-      },
       name: {
         type: Sequelize.STRING
       },
-      price: {
+      email: {
         type: Sequelize.STRING
       },
-      productDescription: {
+      discount: {
         type: Sequelize.STRING
       },
-      collection: {
-        type: Sequelize.STRING
-      },
-      collectionDescription: {
-        type: Sequelize.STRING
-      },
-      categories: {
-        type: Sequelize.STRING
-      },
-      size: {
-        type: Sequelize.STRING
-      },
-      color: {
-        type: Sequelize.STRING
-      },
-      quantity: {
-        type: Sequelize.STRING
-      },
-      featured: {
-        type: Sequelize.INTEGER
+      brand_id: {
+        type: Sequelize.INTEGER,
+        references:{
+          model:'Brands',
+          key:'id'
+        },
+        onDelete:'CASCADE',
+        onUpdate:'CASCADE'
       },
       createdAt: {
         allowNull: false,
